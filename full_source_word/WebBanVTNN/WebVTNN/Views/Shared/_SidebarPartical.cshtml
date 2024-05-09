@@ -1,0 +1,25 @@
+﻿<div class="left-sidebar">
+
+    <form asp-action="SearechSlider" asp-controller="Search" method="get">
+        <div class="price-range">
+            <h2>Price Range</h2>
+            <div class="well text-center">
+                <input type="text" class="span2" value="" data-slider-min="0" data-slider-max="200" data-slider-step="2" data-slider-value="[40,50]" id="sl2" />
+                <br />
+                <b class="pull-left">$ 0</b> <b class="pull-right">$ 200</b>
+            </div>
+        </div>
+        <button class="btn btn-default" type="submit">Search</button>
+    </form>
+
+    <h2>Category</h2>
+    <div class="panel-group category-products" id="accordian">
+        <vc:categories></vc:categories>
+    </div>
+
+    <div class="brands_products">
+        <h2>Brands</h2>
+        <vc:brands></vc:brands>
+    </div>
+</div>
+

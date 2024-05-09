@@ -1,0 +1,59 @@
+﻿@model X.PagedList.IPagedList<OderModel>
+@using X.PagedList.Mvc.Core
+@{
+    ViewData["title"] = "Oder Title";
+}
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Order Code</th>
+            <th scope="col">Order Name</th>
+            <th scope="col">Create Date</th>
+            <th scope="col">Status</th>
+            <th scope="col">View</th>
+            <th scope="col">Approve</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <th scope="row">@item.Id</th>
+                <td>@item.OderCode</td>
+                <td>@item.OderName</td>
+                <td>@item.CretaeDate</td>
+                <td>
+                    @if (item.Status == 1)
+                    {
+                        <span class="text-area text-success">Đơn hàng mới</span>
+                    }
+                    else
+                    {
+                        <span class="text-area text-danger">Đơn hàng đã giao</span>
+
+                    }
+                </td>
+                <td>
+                    <a asp-action="ViewOrder" class="btn btn-warning btn-sm" asp-controller="Oder" asp-route-ordercode="@item.OderCode">View OrderDetails</a>
+                </td>
+                @if (item.Status == 1)
+                {
+                    <td>
+                        <a asp-action="ApproveApply" class="btn btn-danger btn-sm confirmDeletion" asp-controller="Oder" asp-route-ordercode="@item.OderCode">Approve</a>
+                    </td>
+                }
+                else
+                {
+                    <td>
+                        <a class="btn btn-default">Approved</a>
+                    </td>
+                }
+
+            </tr>
+        }
+    </tbody>
+</table>
+<div>
+    @Html.PagedListPager(Model, page=>Url.ActionLink("Index", "Oder", new{page=page}))
+</div>

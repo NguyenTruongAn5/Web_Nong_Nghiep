@@ -1,0 +1,41 @@
+﻿@model PostModel
+@{
+    ViewData["Title"] = "Edit Post";
+}
+
+<div class="col-md-9">
+    <form asp-action="Add" enctype="multipart/form-data">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <div class="form-group">
+            <label>Title (*)</label>
+            <input asp-for="Title" class="form-control" />
+            <span asp-validation-for="Title" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label>Content (*)</label>
+            <!-- Thay thế trường Description bằng CKEditor -->
+            <textarea id="Description" asp-for="Content" name="Description" class="form-control"></textarea>
+            <span asp-validation-for="Content" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <button class="btn btn-primary btn-sm">Add Product</button>
+        </div>
+    </form>
+    <a asp-action="Index">Back to Home</a>
+</div>
+
+@section Scripts {
+    <!-- Đường dẫn đến tập tin JavaScript của CKEditor -->
+    <script src="https://cdn.ckeditor.com/4.22.1/standard/ckeditor.js"></script>
+
+    <script>
+        // Khi tài liệu được tải hoàn toàn
+        document.addEventListener("DOMContentLoaded", function () {
+            // Thay thế trường Description bằng CKEditor
+            CKEDITOR.replace('Description');
+        });
+    </script>
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

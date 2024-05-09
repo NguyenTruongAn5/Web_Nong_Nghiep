@@ -1,0 +1,42 @@
+﻿<div class="main">
+    <div class="topbar">
+        <div class="toggle">
+            <ion-icon name="menu-outline"></ion-icon>
+        </div>
+        <div><a asp-action="Restore" class="btn btn-primary" asp-controller="Product">
+                <span>Khôi phục SP</span>
+        </a></div>
+        <div>
+            <a asp-action="RestorePost" class="btn btn-primary" asp-controller="Post">
+                <span>Khôi phục Posts</span>
+            </a>
+        </div>
+        <div class="user">
+            <img src="~/images/admin_dl.jpg" alt="">
+        </div>
+        <div><span>@User.Identity.Name</span></div>
+    </div>
+</div>
+<style>
+    .description-truncate {
+        max-width: 200px; /* Điều chỉnh kích thước hiển thị */
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+
+        .description-truncate:hover {
+            white-space: normal;
+            overflow: visible;
+            background: rgba(255, 255, 255, 0.9);
+            border: 1px solid #ccc;
+            padding: 5px;
+            max-width: none;
+            word-wrap: break-word;
+        }
+
+    .main {
+        position: relative;
+        z-index: 1; /* Đặt giá trị z-index cao hơn so với các phần khác */
+    }
+</style>

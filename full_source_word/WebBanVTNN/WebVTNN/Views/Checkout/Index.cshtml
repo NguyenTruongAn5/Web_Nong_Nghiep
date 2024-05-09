@@ -1,0 +1,238 @@
+﻿@using WebLinhKienDienTu.Models.ViewModels
+@model CartItemViewModel
+
+@{
+    var email = ViewBag.Email;
+}
+<div class="shopper-informations">
+    <div class="row">
+        <div class="col-sm-5 clearfix">
+            <div class="bill-to">
+                <p>Bill To</p>
+                <div class="form-one">
+                    <form>
+                        <label>Email (<span style="color: red">*</span>)</label>
+                        <input type="text" placeholder="Email*" value="@email">
+                        <label>Full Name (<span style="color: red">*</span>)</label>
+                        <input type="text" placeholder="Full Name*" value="@User.Identity.Name">
+                    </form>
+
+                </div>
+                <div class="form-two">
+                    <label>Province (<span style="color: red">*</span>)</label>
+                    <form>
+                        <select id="province">
+                            <option>-- Province --</option>
+                        </select>
+
+                        <select id="district">
+                            <option>-- District --</option>
+                        </select>
+
+                        <select id="ward">
+                            <option>-- Ward --</option>
+                        </select>
+
+                        <label>Address (<span style="color: red">*</span>)</label>
+                        <input type="text" placeholder="Address *">
+                        <label>Phone (<span style="color: red">*</span>)</label>
+                        <input type="text" placeholder="Phone *">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<section id="cart_items">
+    <div class="container">
+        <div class="table-responsive cart_info">
+            <table class="table table-condensed">
+                <thead>
+                    <tr class="cart_menu">
+                        <td class="image">Image</td>
+                        <td class="description">Name</td>
+                        <td class="price">Price</td>
+                        <td class="quantity">Quantity</td>
+                        <td class="total">Total</td>
+                        <td></td>
+                    </tr>
+                </thead>
+                <tbody>
+                    @if (Model.CartItems.Count > 0)
+                    {
+                        @foreach (var item in Model.CartItems)
+                        {
+                            <tr>
+                                <td class="cart_product">
+                                    <a href=""><img src="~/media/products/@item.Image" width="60px" height="60px" alt="@item.ProductName"></a>
+                                </td>
+                                <td class="cart_description">
+                                    <h5><a href="" class="description-truncate">@item.ProductName</a></h5>
+                                </td>
+                                <td class="cart_price">
+                                    <h5>$@item.Price</h5>
+                                </td>
+                                <td>
+                                    <div class="quantity-container">
+                                        <a class="btn btn-default btn-sm btn-quantity" asp-action="Descrease" asp-controller="Cart" asp-route-id="@item.ProductId"> - </a>
+                                        <input class="cart_quantity_input" autocomplete="off" size="3" type="text" value="@item.Quantity">
+                                        <a class="btn btn-success btn-sm btn-quantity" asp-action="Inscrease" asp-controller="Cart" asp-route-id="@item.ProductId"> + </a>
+                                    </div>
+                                </td>
+                                <td class="cart_total">
+                                    <h5 class="cart_total_price">
+                                        $@Model.CartItems.Where(x=>x.ProductId==@item.ProductId).Sum(x=>x.Quantity * x.Price).ToString()
+                                    </h5>
+                                </td>
+                                <td class="cart_delete">
+                                    <a class="cart_quantity_delete" asp-action="Remove" asp-controller="Cart" asp-route-id="@item.ProductId"><i class="fa fa-times"></i></a>
+                                </td>
+                            </tr>
+                        }
+                        <tr>
+                            <td colspan="4" class="cart_total">
+                                <h4>Grand Total: @Model.GrandTotal.ToString()</h4>
+                            </td>
+                            <td colspan="1" class="cart_total">
+                                <a class="btn btn-danger btn-sm" asp-action="Clear" asp-controller="Cart"> Clear </a>
+                            </td>
+
+                        </tr>
+                    }
+                    else
+                    {
+                        <tr>
+                            <td colspan="5" class="cart_total">
+                                <h4>Giỏ hàng trống!</h4>
+                                <a class="btn btn-primary btn-sm" asp-action="Index" asp-controller="Home">Mua hàng ngay</a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+            @if (User.Identity?.IsAuthenticated ?? false)
+            {
+                <a class="btn btn-primary btn-sm btn-checkout" asp-action="VnPayCheckout" asp-controller="Checkout">Checkout with VnPay</a>
+                <a class="btn btn-primary btn-sm btn-checkout" asp-action="Checkout" asp-controller="Checkout">Payment on delivery</a>
+            }
+            else
+            {
+                <h4>Đăng nhập để đặt hàng!</h4>
+            }
+        </div>
+    </div>
+</section>
+
+
+<style>
+    .description-truncate {
+        display: block;
+        width: 200px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+        .description-truncate:hover {
+            width: auto;
+        }
+
+    .quantity-container {
+        display: flex;
+        align-items: center;
+    }
+
+    .btn-quantity {
+        padding: 5px 10px;
+        margin: 0;
+    }
+
+    .cart_quantity_input {
+        width: 30px;
+        text-align: center;
+        margin: 0 5px;
+        border-radius:4px;
+    }
+</style>
+@section Scripts{
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $.ajax({
+            url: 'https://vapi.vnappmob.com/api/province',
+            method: 'GET',
+            success: function (response) {
+                var provinces = response.results;
+                updateProvinceDropdown(provinces);
+            },
+            error: function (xhr, status, error) {
+                console.log(error);
+            }
+        });
+        function updateProvinceDropdown(provinces) {
+            var dropdown = $('#province');
+
+            $.each(provinces, function (index, province) {
+                dropdown.append($('<option></option>').attr('value', province.province_id).text(province.province_name));
+            });
+        }
+        $('#province').on('change', function () {
+            var selectedProvinceCode = $(this).val();
+            $.ajax({
+                url: 'https://vapi.vnappmob.com/api/province/district/' + selectedProvinceCode,
+                method: 'GET',
+                success: function (response) {
+                    var districts = response.results;
+                    updateDistrictDropdown(districts);
+                },
+                error: function (xhr, status, error) {
+                    console.log(error);
+                }
+            });
+        });
+
+        function updateDistrictDropdown(districts) {
+            var dropdown = $('#district');
+
+            dropdown.empty();
+
+            dropdown.append($('<option></option>').attr('value', '').text('Chọn huyện/quận'));
+
+            $.each(districts, function (index, district) {
+                dropdown.append($('<option></option>').attr('value', district.district_id).text(district.district_name));
+            });
+        }
+
+        $('#district').on('change', function () {
+            var selectedDistrictCode = $(this).val();
+            $.ajax({
+                url: 'https://vapi.vnappmob.com/api/province/ward/' + selectedDistrictCode,
+                method: 'GET',
+                success: function (response) {
+                    var wards = response.results;
+                    updateWardDropdown(wards);
+                },
+                error: function (xhr, status, error) {
+                    console.log(error);
+                }
+            });
+
+        });
+        function updateWardDropdown(wards) {
+            var dropdown = $('#ward');
+
+            dropdown.empty();
+
+            dropdown.append($('<option></option>').attr('value', '').text('Chọn xã/phường'));
+
+            $.each(wards, function (index, ward) {
+                dropdown.append($('<option></option>').attr('value', ward.ward_id).text(ward.ward_name));
+            });
+        }
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+}
+<style>
+    .btn-checkout {
+        align-self: flex-end;
+    }
+</style>

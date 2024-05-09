@@ -1,0 +1,233 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Home | AnNguyen-Shopper</title>
+    <link href="~/css/bootstrap.min.css" rel="stylesheet">
+    <link href="~/css/font-awesome.min.css" rel="stylesheet">
+    <link href="~/css/prettyPhoto.css" rel="stylesheet">
+    <link href="~/css/price-range.css" rel="stylesheet">
+    <link href="~/css/animate.css" rel="stylesheet">
+    <link href="~/css/main.css" rel="stylesheet">
+    <link href="~/css/responsive.css" rel="stylesheet">
+    <link href="~/css/Search.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <link rel="shortcut icon" href="images/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+</head><!--/head-->
+
+<body>
+    <header id="header">
+        <!--header-->
+        <div class="header_top">
+            <!--header_top-->
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="contactinfo">
+                            <ul class="nav nav-pills">
+                                <li><a href="#"><i class="fa fa-phone"></i>0564056521</a></li>
+                                <li><a href="#"><i class="fa fa-envelope"></i>  kaicapro@gmai.com</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="social-icons pull-right">
+                            <ul class="nav navbar-nav">
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!--/header_top-->
+
+        <div class="header-middle">
+            <!--header-middle-->
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="logo pull-left">
+                            <a asp-action="Index" asp-controller="Home"><img src="~/images/logo_vtnn.jpg" width="20%" /></a>
+                        </div>
+                    </div>
+                    <div class="col-sm-8">
+                        <div class="shop-menu pull-right">
+                            <ul class="nav navbar-nav">
+                                <li><a asp-action="Index" asp-controller="Cart"><i class="fa fa-shopping-cart"></i> Cart</a></li>
+                                @if (User.Identity?.IsAuthenticated ?? false)
+                                {
+                                    <li><a asp-controller="ManagerAccount" asp-action="Index"><i class="fa fa-user"></i> Account</a></li>
+                                    <li><a asp-action="Index" asp-controller="Checkout"><i class="fa fa-crosshairs"></i> Checkout</a></li>
+                                    @if (User.IsInRole("Admin"))
+                                    {
+                                        <li><a asp-area="" asp-controller="Admin" asp-action="Index"><i class="fa fa-cog"></i> Admin Page</a></li>
+                                    }
+                                    <li><a asp-controller="Account" asp-action="Logout"><i class="fa fa-lock"></i>@User.Identity.Name, Logout</a></li>
+                                }
+                                else
+                                {
+                                    <li><a asp-controller="Account" asp-action="Login"><i class="fa fa-lock"></i> Login</a></li>
+                                }
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!--/header-middle-->
+
+        <div class="header-bottom">
+            <!--header-bottom-->
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-9">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        </div>
+                        <div class="mainmenu pull-left">
+                            <ul class="nav navbar-nav collapse navbar-collapse">
+                                <li><a asp-action="Index" asp-controller="Home" class="active">Home</a></li>
+                                <li class="dropdown">
+                                    <a asp-controller="Product">Shop<i class="fa fa-angle-down"></i></a>
+                                    <ul role="menu" class="sub-menu">
+                                        <li><a asp-controller="Checkout" asp-action="Index">Checkout</a></li>
+                                        <li><a asp-controller="Cart" asp-action="Index">Cart</a></li>
+                                        <li><a asp-controller="Account" asp-action="Login">Login</a></li>
+                                    </ul>
+                                </li>
+                                <li><a asp-action="Index" asp-controller="Post">Blog</a></li>
+                                <li><a asp-action="ContactUs" asp-controller="Home">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <form method="get" asp-action="Index" asp-controller="Search">
+                        <div class="searchBox">
+                            <input class="searchInput" type="text" name="value" placeholder="Search">
+                            <button type="submit" class="searchButton">
+                                <i class="fa fa-search"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div><!--/header-bottom-->
+    </header><!--/header-->
+    <section>
+        <div class="container">
+            <div class="row">
+                @Html.Partial("_NotificationPartial")
+                @RenderBody()
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer">
+        <div class="footer-widget">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-2">
+                        <div class="single-widget">
+                            <img src="~/images/logo_vtnn.jpg" width="100%" />
+                        </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <div class="single-widget">
+                            <h2>Thông tin chung</h2>
+                            <ul class="nav nav-pills nav-stacked">
+                                <li><a href="#"><i class="fa-regular fa-clock"></i>Giờ làm việc: 08:00 - 21:30</a></li>
+                                <li><a href="#"><i class="fa fa-phone"></i>Hotline: 0564056521</a></li>
+                                <li><a href="#"><i class="fa fa-envelope"></i>Email: kaicapro@gmail.com</a></li>
+                            </ul>
+                            <div class="social-icons pull-right">
+                                <ul class="nav navbar-nav">
+                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <div class="single-widget">
+                            <h2>CÔNG TY TNHH VẬT TƯ NÔNG NGHIỆP AN NGUYỄN</h2>
+                            <ul class="nav nav-pills nav-stacked">
+                                <li><a href="#">Giấy ĐKKD số 1801608803 do Sở KH&ĐT TP. Cao Lãnh cấp Ngày 19/07/2023</a></li>
+                                <li><a href="#">Showroom Cao Lãnh: 47C Đ. 3/2, Cao Lãnh, ĐT</a></li>
+                                <li><a href="#">V.P Cần Thơ: 60 - 62 Đ. Lê Bình, Ninh Kiều</a></li>
+                                <li><a href="#">V.P HCM: 46/11 Đ. Tân Cảng, Bình Thạnh</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <div class="single-widget">
+                            <h2>THÔNG TIN KHÁC</h2>
+                            <ul class="nav nav-pills nav-stacked">
+                                <li><a asp-action="Installment" asp-controller="InforAboutUs">Chính sách trả góp</a></li>
+                                <li><a asp-action="Security" asp-controller="InforAboutUs">Chính sách bảo mật</a></li>
+                                <li><a asp-action="Policy" asp-controller="InforAboutUs">Chính sách đổi trả</a></li>
+                                <li><a asp-action="Transport" asp-controller="InforAboutUs">Chính sách vận chuyển</a></li>
+                                <li><a asp-action="Agreement" asp-controller="InforAboutUs">Thoả thuận sử dụng</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 col-sm-offset-1">
+                        <div class="single-widget">
+                            <h2>About An Nguyen</h2>
+                            <form asp-action="InforAbout" asp-controller="Home" class="searchform">
+                                <input name="emailUser" type="text" placeholder="Your email address" />
+                                <button type="submit" class="btn btn-default"><i class="fa fa-arrow-circle-o-right"></i></button>
+                                <p>Nhận những cập nhật mới nhất từ trang web của chúng tôi  <br />và cập nhật thông tin của bạn...</p>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <p class="pull-left">Copyright © 2013 AN NGUYEN Inc. All rights reserved.</p>
+                    <p class="pull-right">Designed by <span><a target="_blank" href="http://www.themeum.com">An Nguyen</a></span></p>
+                </div>
+            </div>
+        </div>
+
+    </footer><!--/Footer-->
+
+    <script src="~/js/jquery.js"></script>
+    <script src="~/js/bootstrap.min.js"></script>
+    <script src="~/js/jquery.scrollUp.min.js"></script>
+    <script src="~/js/price-range.js"></script>
+    <script src="~/js/jquery.prettyPhoto.js"></script>
+    <script src="~/js/main.js"></script>
+    <script src="https://tudongchat.com/js/chatbox.js"></script>
+    <script>
+        const tudong_chatbox = new TuDongChat('lIb713fg5wcPuxmXlxIsj')
+        tudong_chatbox.initial()
+    </script>
+    @await RenderSectionAsync("Scripts", required:false)
+</body>
+</html>

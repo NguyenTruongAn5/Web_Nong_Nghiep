@@ -1,0 +1,119 @@
+﻿@using WebLinhKienDienTu.Models.ViewModels
+@model CartItemViewModel
+<section id="cart_items">
+    <div class="container">
+        <div class="breadcrumbs">
+            <ol class="breadcrumb">
+                <li><a asp-action="Index" asp-controller="Home">Home</a></li>
+                <li class="active">Shopping Cart</li>
+            </ol>
+        </div>
+        <div class="table-responsive cart_info">
+            <table class="table table-condensed">
+                <thead>
+                    <tr class="cart_menu">
+                        <td class="image">Image</td>
+                        <td class="description">Name</td>
+                        <td class="price">Price</td>
+                        <td class="quantity">Quantity</td>
+                        <td class="total">Total</td>
+                        <td></td>
+                    </tr>
+                </thead>
+                <tbody>
+                    @if (Model.CartItems.Count > 0)
+                    {
+                        @foreach (var item in Model.CartItems)
+                        {
+                            <tr>
+                                <td class="cart_product">
+                                    <a href=""><img src="~/media/products/@item.Image" width="60px" height="60px" alt="@item.ProductName"></a>
+                                </td>
+                                <td class="cart_description">
+                                    <h5><a href="" class="description-truncate">@item.ProductName</a></h5>
+                                </td>
+                                <td class="cart_price">
+                                    <h5>$@item.Price</h5>
+                                </td>
+                                <td>
+                                    <div class="quantity-container">
+                                        <a class="btn btn-default btn-sm btn-quantity" asp-action="Descrease" asp-controller="Cart" asp-route-id="@item.ProductId"> - </a>
+                                        <input class="cart_quantity_input" autocomplete="off" size="3" type="text" value="@item.Quantity">
+                                        <a class="btn btn-success btn-sm btn-quantity" asp-action="Inscrease" asp-controller="Cart" asp-route-id="@item.ProductId"> + </a>
+                                    </div>
+                                </td>
+                                <td class="cart_total">
+                                    <h5 class="cart_total_price">
+                                        $@Model.CartItems.Where(x=>x.ProductId==@item.ProductId).Sum(x=>x.Quantity * x.Price).ToString()
+                                    </h5>
+                                </td>
+                                <td class="cart_delete">
+                                    <a class="cart_quantity_delete" asp-action="Remove" asp-controller="Cart" asp-route-id="@item.ProductId"><i class="fa fa-times"></i></a>
+                                </td>
+                            </tr>
+                        }
+                        <tr>
+                            <td colspan="4" class="cart_total">
+                                <h4>Grand Total: @Model.GrandTotal.ToString()</h4>
+                            </td>
+                            <td colspan="1" class="cart_total">
+                                <a class="btn btn-danger btn-sm" asp-action="Clear" asp-controller="Cart"> Clear </a>
+                            </td>
+                            @if (User.Identity?.IsAuthenticated ?? false)
+                            {
+                                <td colspan="1" class="cart_total">
+                                    <a class="btn btn-primary btn-sm" asp-action="Index" asp-controller="Checkout"> Checkout </a>
+                                </td>
+                            }
+                            else
+                            {
+                                <td colspan="1" class="cart_total">
+                                    <h4>Đăng nhập để đặt hàng!</h4>
+                                </td>
+                            }
+                        </tr>
+                    }
+                    else
+                    {
+                        <tr>
+                            <td colspan="5" class="cart_total">
+                                <h4>Giỏ hàng trống!</h4>
+                                <a class="btn btn-primary btn-sm" asp-action="Index" asp-controller="Home">Mua hàng ngay</a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+<style>
+    .description-truncate {
+        display: block;
+        width: 200px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+        .description-truncate:hover {
+            width: auto;
+        }
+
+    .quantity-container {
+        display: flex;
+        align-items: center;
+    }
+
+    .btn-quantity {
+        padding: 5px 10px;
+        margin: 0;
+    }
+
+    .cart_quantity_input {
+        width: 30px;
+        text-align: center;
+        margin: 0 5px;
+        border-radius: 4px;
+    }
+</style>

@@ -1,0 +1,28 @@
+﻿@model UserModel
+@{
+    ViewData["Title"] = "Get OTP";
+    var email = ViewBag.Email;
+    var otp = ViewBag.OTP;
+}
+<section id="">
+    <!--form-->
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-8">
+                <div class="signup-form col-sm-offset-1">
+                    <!--sign up form-->
+                    <h2>Confirm OTP</h2>
+                    <form asp-route-otp="@otp" asp-route-email="@email" asp-action="ChangePassByOTP" asp-controller="Account">
+                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                        <div class="form-group">
+                            <label>OTP</label>
+                            <input asp-for="UserName" name="otpUser" class="form-control" />
+                            <span asp-validation-for="UserName" class="text-danger"></span>
+                        </div>
+                        <button class="btn btn-default">Submit</button>
+                    </form>
+                </div><!--/sign up form-->
+            </div>
+        </div>
+    </div>
+</section><!--/form-->

@@ -1,0 +1,529 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\HK 1 NAM 4\\DO_AN_2\\WebBanVTNN\\WebLinhKienDienTu\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\DoAn2_VTNN.bundle.scp.css",
+      "PackagePath": "staticwebassets\\DoAn2_VTNN.bundle.scp.css"
+    },
+    {
+      "Id": "D:\\HK 1 NAM 4\\DO_AN_2\\WebBanVTNN\\WebLinhKienDienTu\\wwwroot\\backend\\css\\style.css",
+      "PackagePath": "staticwebassets\\backend\\css\\style.css"
+    },
+    {
+      "Id": "D:\\HK 1 NAM 4\\DO_AN_2\\WebBanVTNN\\WebLinhKienDienTu\\wwwroot\\backend\\js\\main.js",
+      "PackagePath": "staticwebassets\\backend\\js\\main.js"
+    },
+    {
+      "Id": "D:\\HK 1 NAM 4\\DO_AN_2\\WebBanVTNN\\WebLinhKienDienTu\\wwwroot\\backend\\js\\site.js",
+      "PackagePath": "staticwebassets\\backend\\js\\site.js"
+    },
+    {
+      "Id": "D:\\HK 1 NAM 4\\DO_AN_2\\WebBanVTNN\\WebLinhKienDienTu\\wwwroot\\css\\Search.css",
+      "PackagePath": "staticwebassets\\css\\Search.css"
+    },
+    {
+      "Id": "D:\\HK 1 NAM 4\\DO_AN_2\\WebBanVTNN\\WebLinhKienDienTu\\wwwroot\\css\\animate.css",
+      "PackagePath": "staticwebassets\\css\\animate.css"
+    },
+    {
+      "Id": "D:\\HK 1 NAM 4\\DO_AN_2\\WebBanVTNN\\WebLinhKienDienTu\\wwwroot\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\HK 1 NAM 4\\DO_AN_2\\WebBanVTNN\\WebLinhKienDienTu\\wwwroot\\css\\font-awesome.min.css",
+      "PackagePath": "staticwebassets\\css\\font-awesome.min.css"
+    },
+    {
+      "Id": "D:\\HK 1 NAM 4\\DO_AN_2\\WebBanVTNN\\WebLinhKienDienTu\\wwwroot\\css\\main.css",
+      "PackagePath": "staticwebassets\\css\\main.css"
+    },
+    {
+      "Id": "D:\\HK 1 NAM 4\\DO_AN_2\\WebBanVTNN\\WebLinhKienDienTu\\wwwroot\\css\\prettyPhoto.css",
+      "PackagePath": "staticwebassets\\css\\prettyPhoto.css"
+    },
+    {
+      "Id": "D:\\HK 1 NAM 4\\DO_AN_2\\WebBanVTNN\\WebLinhKienDienTu\\wwwroot\\css\\price-range.css",
+      "PackagePath": "staticwebassets\\css\\price-range.css"
+    },
+    {
+      "Id": "D:\\HK 1 NAM 4\\DO_AN_2\\WebBanVTNN\\WebLinhKienDienTu\\wwwroot\\css\\responsive.css",
+      "PackagePath": "staticwebassets\\css\\responsive.css"
+    },
+    {
+      "Id": "D:\\HK 1 NAM 4\\DO_AN_2\\WebBanVTNN\\WebLinhKienDienTu\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "D:\\HK 1 NAM 4\\DO_AN_2\\WebBanVTNN\\WebLinhKienDienTu\\wwwroot\\fonts\\FontAwesome.otf",
+      "PackagePath": "staticwebassets\\fonts\\FontAwesome.otf"
+    },
+    {
+      "Id": "D:\\HK 1 NAM 4\\DO_AN_2\\WebBanVTNN\\WebLinhKienDienTu\\wwwroot\\fonts\\fontawesome-webfont.svg",
+      "PackagePath": "staticwebassets\\fonts\\fontawesome-webfont.svg"
+    },
+    {
+      "Id": "D:\\HK 1 NAM 4\\DO_AN_2\\WebBanVTNN\\WebLinhKienDienTu\\wwwroot\\fonts\\fontawesome-webfont.woff",
+      "PackagePath": "staticwebassets\\fonts\\fontawesome-webfont.woff"
+    },
+    {
+      "Id": "D:\\HK 1 NAM 4\\DO_AN_2\\WebBanVTNN\\WebLinhKienDienTu\\wwwroot\\fonts\\glyphicons-halflings-regular.svg",
+      "PackagePath": "staticwebassets\\fonts\\glyphicons-halflings-regular.svg"
+    },
+    {
+      "Id": "D:\\HK 1 NAM 4\\DO_AN_2\\WebBanVTNN\\WebLinhKienDienTu\\wwwroot\\fonts\\glyphicons-halflings-regular.woff",
+      "PackagePath": "staticwebassets\\fonts\\glyphicons-halflings-regular.woff"
+    },
+    {
+      "Id": "D:\\HK 1 NAM 4\\DO_AN_2\\WebBanVTNN\\WebLinhKienDienTu\\wwwroot\\images\\404.png",
+      "PackagePath": "staticwebassets\\images\\404.png"
+    },
+    {
+      "Id": "D:\\HK 1 NAM 4\\DO_AN_2\\WebBanVTNN\\WebLinhKienDienTu\\wwwroot\\images\\admin_dl.jpg",
+      "PackagePath": "staticwebassets\\images\\admin_dl.jpg"
+    },
+    {
+      "Id": "D:\\HK 1 NAM 4\\DO_AN_2\\WebBanVTNN\\WebLinhKienDienTu\\wwwroot\\images\\banner1.png",
+      "PackagePath": "staticwebassets\\images\\banner1.png"
+    },
+    {
+      "Id": "D:\\HK 1 NAM 4\\DO_AN_2\\WebBanVTNN\\WebLinhKienDienTu\\wwwroot\\images\\banner2.png",
+      "PackagePath": "staticwebassets\\images\\banner2.png"
+    },
+    {
+      "Id": "D:\\HK 1 NAM 4\\DO_AN_2\\WebBanVTNN\\WebLinhKienDienTu\\wwwroot\\images\\banner3.png",
+      "PackagePath": "staticwebassets\\images\\banner3.png"
+    },
+    {
+      "Id": "D:\\HK 1 NAM 4\\DO_AN_2\\WebBanVTNN\\WebLinhKienDienTu\\wwwroot\\images\\logo-da-thong-bao-bo-cong-thuong.png",
+      "PackagePath": "staticwebassets\\images\\logo-da-thong-bao-bo-cong-thuong.png"
+    },
+    {
+      "Id": "D:\\HK 1 NAM 4\\DO_AN_2\\WebBanVTNN\\WebLinhKienDienTu\\wwwroot\\images\\logo_vtnn.jpg",
+      "PackagePath": "staticwebassets\\images\\logo_vtnn.jpg"
+    },
+    {
+      "Id": "D:\\HK 1 NAM 4\\DO_AN_2\\WebBanVTNN\\WebLinhKienDienTu\\wwwroot\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "D:\\HK 1 NAM 4\\DO_AN_2\\WebBanVTNN\\WebLinhKienDienTu\\wwwroot\\js\\contact.js",
+      "PackagePath": "staticwebassets\\js\\contact.js"
+    },
+    {
+      "Id": "D:\\HK 1 NAM 4\\DO_AN_2\\WebBanVTNN\\WebLinhKienDienTu\\wwwroot\\js\\gmaps.js",
+      "PackagePath": "staticwebassets\\js\\gmaps.js"
+    },
+    {
+      "Id": "D:\\HK 1 NAM 4\\DO_AN_2\\WebBanVTNN\\WebLinhKienDienTu\\wwwroot\\js\\html5shiv.js",
+      "PackagePath": "staticwebassets\\js\\html5shiv.js"
+    },
+    {
+      "Id": "D:\\HK 1 NAM 4\\DO_AN_2\\WebBanVTNN\\WebLinhKienDienTu\\wwwroot\\js\\jquery.js",
+      "PackagePath": "staticwebassets\\js\\jquery.js"
+    },
+    {
+      "Id": "D:\\HK 1 NAM 4\\DO_AN_2\\WebBanVTNN\\WebLinhKienDienTu\\wwwroot\\js\\jquery.prettyPhoto.js",
+      "PackagePath": "staticwebassets\\js\\jquery.prettyPhoto.js"
+    },
+    {
+      "Id": "D:\\HK 1 NAM 4\\DO_AN_2\\WebBanVTNN\\WebLinhKienDienTu\\wwwroot\\js\\jquery.scrollUp.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery.scrollUp.min.js"
+    },
+    {
+      "Id": "D:\\HK 1 NAM 4\\DO_AN_2\\WebBanVTNN\\WebLinhKienDienTu\\wwwroot\\js\\main.js",
+      "PackagePath": "staticwebassets\\js\\main.js"
+    },
+    {
+      "Id": "D:\\HK 1 NAM 4\\DO_AN_2\\WebBanVTNN\\WebLinhKienDienTu\\wwwroot\\js\\price-range.js",
+      "PackagePath": "staticwebassets\\js\\price-range.js"
+    },
+    {
+      "Id": "D:\\HK 1 NAM 4\\DO_AN_2\\WebBanVTNN\\WebLinhKienDienTu\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "D:\\HK 1 NAM 4\\DO_AN_2\\WebBanVTNN\\WebLinhKienDienTu\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "D:\\HK 1 NAM 4\\DO_AN_2\\WebBanVTNN\\WebLinhKienDienTu\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "D:\\HK 1 NAM 4\\DO_AN_2\\WebBanVTNN\\WebLinhKienDienTu\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "D:\\HK 1 NAM 4\\DO_AN_2\\WebBanVTNN\\WebLinhKienDienTu\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "D:\\HK 1 NAM 4\\DO_AN_2\\WebBanVTNN\\WebLinhKienDienTu\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "D:\\HK 1 NAM 4\\DO_AN_2\\WebBanVTNN\\WebLinhKienDienTu\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "D:\\HK 1 NAM 4\\DO_AN_2\\WebBanVTNN\\WebLinhKienDienTu\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "D:\\HK 1 NAM 4\\DO_AN_2\\WebBanVTNN\\WebLinhKienDienTu\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\HK 1 NAM 4\\DO_AN_2\\WebBanVTNN\\WebLinhKienDienTu\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "D:\\HK 1 NAM 4\\DO_AN_2\\WebBanVTNN\\WebLinhKienDienTu\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "D:\\HK 1 NAM 4\\DO_AN_2\\WebBanVTNN\\WebLinhKienDienTu\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "D:\\HK 1 NAM 4\\DO_AN_2\\WebBanVTNN\\WebLinhKienDienTu\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "D:\\HK 1 NAM 4\\DO_AN_2\\WebBanVTNN\\WebLinhKienDienTu\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "D:\\HK 1 NAM 4\\DO_AN_2\\WebBanVTNN\\WebLinhKienDienTu\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "D:\\HK 1 NAM 4\\DO_AN_2\\WebBanVTNN\\WebLinhKienDienTu\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "D:\\HK 1 NAM 4\\DO_AN_2\\WebBanVTNN\\WebLinhKienDienTu\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\HK 1 NAM 4\\DO_AN_2\\WebBanVTNN\\WebLinhKienDienTu\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "D:\\HK 1 NAM 4\\DO_AN_2\\WebBanVTNN\\WebLinhKienDienTu\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "D:\\HK 1 NAM 4\\DO_AN_2\\WebBanVTNN\\WebLinhKienDienTu\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "D:\\HK 1 NAM 4\\DO_AN_2\\WebBanVTNN\\WebLinhKienDienTu\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "D:\\HK 1 NAM 4\\DO_AN_2\\WebBanVTNN\\WebLinhKienDienTu\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "D:\\HK 1 NAM 4\\DO_AN_2\\WebBanVTNN\\WebLinhKienDienTu\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "D:\\HK 1 NAM 4\\DO_AN_2\\WebBanVTNN\\WebLinhKienDienTu\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "D:\\HK 1 NAM 4\\DO_AN_2\\WebBanVTNN\\WebLinhKienDienTu\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\HK 1 NAM 4\\DO_AN_2\\WebBanVTNN\\WebLinhKienDienTu\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "D:\\HK 1 NAM 4\\DO_AN_2\\WebBanVTNN\\WebLinhKienDienTu\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "D:\\HK 1 NAM 4\\DO_AN_2\\WebBanVTNN\\WebLinhKienDienTu\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\HK 1 NAM 4\\DO_AN_2\\WebBanVTNN\\WebLinhKienDienTu\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "D:\\HK 1 NAM 4\\DO_AN_2\\WebBanVTNN\\WebLinhKienDienTu\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "D:\\HK 1 NAM 4\\DO_AN_2\\WebBanVTNN\\WebLinhKienDienTu\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "D:\\HK 1 NAM 4\\DO_AN_2\\WebBanVTNN\\WebLinhKienDienTu\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "D:\\HK 1 NAM 4\\DO_AN_2\\WebBanVTNN\\WebLinhKienDienTu\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\HK 1 NAM 4\\DO_AN_2\\WebBanVTNN\\WebLinhKienDienTu\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "D:\\HK 1 NAM 4\\DO_AN_2\\WebBanVTNN\\WebLinhKienDienTu\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "D:\\HK 1 NAM 4\\DO_AN_2\\WebBanVTNN\\WebLinhKienDienTu\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "D:\\HK 1 NAM 4\\DO_AN_2\\WebBanVTNN\\WebLinhKienDienTu\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "D:\\HK 1 NAM 4\\DO_AN_2\\WebBanVTNN\\WebLinhKienDienTu\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "D:\\HK 1 NAM 4\\DO_AN_2\\WebBanVTNN\\WebLinhKienDienTu\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "D:\\HK 1 NAM 4\\DO_AN_2\\WebBanVTNN\\WebLinhKienDienTu\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "D:\\HK 1 NAM 4\\DO_AN_2\\WebBanVTNN\\WebLinhKienDienTu\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "D:\\HK 1 NAM 4\\DO_AN_2\\WebBanVTNN\\WebLinhKienDienTu\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "D:\\HK 1 NAM 4\\DO_AN_2\\WebBanVTNN\\WebLinhKienDienTu\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "D:\\HK 1 NAM 4\\DO_AN_2\\WebBanVTNN\\WebLinhKienDienTu\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "D:\\HK 1 NAM 4\\DO_AN_2\\WebBanVTNN\\WebLinhKienDienTu\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "D:\\HK 1 NAM 4\\DO_AN_2\\WebBanVTNN\\WebLinhKienDienTu\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\HK 1 NAM 4\\DO_AN_2\\WebBanVTNN\\WebLinhKienDienTu\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "D:\\HK 1 NAM 4\\DO_AN_2\\WebBanVTNN\\WebLinhKienDienTu\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "D:\\HK 1 NAM 4\\DO_AN_2\\WebBanVTNN\\WebLinhKienDienTu\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "D:\\HK 1 NAM 4\\DO_AN_2\\WebBanVTNN\\WebLinhKienDienTu\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "D:\\HK 1 NAM 4\\DO_AN_2\\WebBanVTNN\\WebLinhKienDienTu\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "D:\\HK 1 NAM 4\\DO_AN_2\\WebBanVTNN\\WebLinhKienDienTu\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "D:\\HK 1 NAM 4\\DO_AN_2\\WebBanVTNN\\WebLinhKienDienTu\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "D:\\HK 1 NAM 4\\DO_AN_2\\WebBanVTNN\\WebLinhKienDienTu\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\HK 1 NAM 4\\DO_AN_2\\WebBanVTNN\\WebLinhKienDienTu\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "D:\\HK 1 NAM 4\\DO_AN_2\\WebBanVTNN\\WebLinhKienDienTu\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "D:\\HK 1 NAM 4\\DO_AN_2\\WebBanVTNN\\WebLinhKienDienTu\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "D:\\HK 1 NAM 4\\DO_AN_2\\WebBanVTNN\\WebLinhKienDienTu\\wwwroot\\media\\products\\0402568c-f847-4e3b-adb2-e028295cc74f_Bộ PC 07 I5-12400F.jpg",
+      "PackagePath": "staticwebassets\\media\\products\\0402568c-f847-4e3b-adb2-e028295cc74f_Bộ PC 07 I5-12400F.jpg"
+    },
+    {
+      "Id": "D:\\HK 1 NAM 4\\DO_AN_2\\WebBanVTNN\\WebLinhKienDienTu\\wwwroot\\media\\products\\0dc13f1e-63ac-4fdc-86c7-4c90636569e9_fradel.png",
+      "PackagePath": "staticwebassets\\media\\products\\0dc13f1e-63ac-4fdc-86c7-4c90636569e9_fradel.png"
+    },
+    {
+      "Id": "D:\\HK 1 NAM 4\\DO_AN_2\\WebBanVTNN\\WebLinhKienDienTu\\wwwroot\\media\\products\\1128ddca-33db-47ea-b6ef-ea63d1a95fbe_dau-bap-do-rd-309.jpg",
+      "PackagePath": "staticwebassets\\media\\products\\1128ddca-33db-47ea-b6ef-ea63d1a95fbe_dau-bap-do-rd-309.jpg"
+    },
+    {
+      "Id": "D:\\HK 1 NAM 4\\DO_AN_2\\WebBanVTNN\\WebLinhKienDienTu\\wwwroot\\media\\products\\148b7d46-b021-4779-badf-0130a435b2dd_Bộ PC 05 Case beca.jpg",
+      "PackagePath": "staticwebassets\\media\\products\\148b7d46-b021-4779-badf-0130a435b2dd_Bộ PC 05 Case beca.jpg"
+    },
+    {
+      "Id": "D:\\HK 1 NAM 4\\DO_AN_2\\WebBanVTNN\\WebLinhKienDienTu\\wwwroot\\media\\products\\179c36e5-6cfb-4e46-94c3-c0f702fb486c_card.jpg",
+      "PackagePath": "staticwebassets\\media\\products\\179c36e5-6cfb-4e46-94c3-c0f702fb486c_card.jpg"
+    },
+    {
+      "Id": "D:\\HK 1 NAM 4\\DO_AN_2\\WebBanVTNN\\WebLinhKienDienTu\\wwwroot\\media\\products\\18ea573f-0a5d-4e5c-ab3f-d8549b761f9a_pc-06-pro-max-07jpg.jpg",
+      "PackagePath": "staticwebassets\\media\\products\\18ea573f-0a5d-4e5c-ab3f-d8549b761f9a_pc-06-pro-max-07jpg.jpg"
+    },
+    {
+      "Id": "D:\\HK 1 NAM 4\\DO_AN_2\\WebBanVTNN\\WebLinhKienDienTu\\wwwroot\\media\\products\\1a794e6d-5ae0-4253-b8f7-db01a64f75af_kho-qua-lai-f1-09.jpg",
+      "PackagePath": "staticwebassets\\media\\products\\1a794e6d-5ae0-4253-b8f7-db01a64f75af_kho-qua-lai-f1-09.jpg"
+    },
+    {
+      "Id": "D:\\HK 1 NAM 4\\DO_AN_2\\WebBanVTNN\\WebLinhKienDienTu\\wwwroot\\media\\products\\211a7bc1-60fc-4dd8-9aa7-367abb954c14_IMG_5330.jpg",
+      "PackagePath": "staticwebassets\\media\\products\\211a7bc1-60fc-4dd8-9aa7-367abb954c14_IMG_5330.jpg"
+    },
+    {
+      "Id": "D:\\HK 1 NAM 4\\DO_AN_2\\WebBanVTNN\\WebLinhKienDienTu\\wwwroot\\media\\products\\24a9e4c4-5a89-4044-8789-e248da8e0db4_pkn.jpg",
+      "PackagePath": "staticwebassets\\media\\products\\24a9e4c4-5a89-4044-8789-e248da8e0db4_pkn.jpg"
+    },
+    {
+      "Id": "D:\\HK 1 NAM 4\\DO_AN_2\\WebBanVTNN\\WebLinhKienDienTu\\wwwroot\\media\\products\\3341829f-9ecf-47c8-9505-2585a65e260b_aliette_.png",
+      "PackagePath": "staticwebassets\\media\\products\\3341829f-9ecf-47c8-9505-2585a65e260b_aliette_.png"
+    },
+    {
+      "Id": "D:\\HK 1 NAM 4\\DO_AN_2\\WebBanVTNN\\WebLinhKienDienTu\\wwwroot\\media\\products\\378cc795-68ba-41e6-a1d7-7a520db3a404_cpu.jpg",
+      "PackagePath": "staticwebassets\\media\\products\\378cc795-68ba-41e6-a1d7-7a520db3a404_cpu.jpg"
+    },
+    {
+      "Id": "D:\\HK 1 NAM 4\\DO_AN_2\\WebBanVTNN\\WebLinhKienDienTu\\wwwroot\\media\\products\\44fa9345-ff83-4fc5-998a-5a0658397c2e_can-phun-xit-keo-dai-325m-hm199.jpg",
+      "PackagePath": "staticwebassets\\media\\products\\44fa9345-ff83-4fc5-998a-5a0658397c2e_can-phun-xit-keo-dai-325m-hm199.jpg"
+    },
+    {
+      "Id": "D:\\HK 1 NAM 4\\DO_AN_2\\WebBanVTNN\\WebLinhKienDienTu\\wwwroot\\media\\products\\4911c8f8-1b3f-451e-b4a3-ed5f6d5fe5af_bo-phun-tuoi-lan-va-cay-canh-da-nang-t111-mien-ship.jpg",
+      "PackagePath": "staticwebassets\\media\\products\\4911c8f8-1b3f-451e-b4a3-ed5f6d5fe5af_bo-phun-tuoi-lan-va-cay-canh-da-nang-t111-mien-ship.jpg"
+    },
+    {
+      "Id": "D:\\HK 1 NAM 4\\DO_AN_2\\WebBanVTNN\\WebLinhKienDienTu\\wwwroot\\media\\products\\4db4a4fe-1c3e-4311-b1d2-cf8716f48301_bo-10-bec-tuoi-phun-mua-hat-nho-hm290.jpg",
+      "PackagePath": "staticwebassets\\media\\products\\4db4a4fe-1c3e-4311-b1d2-cf8716f48301_bo-10-bec-tuoi-phun-mua-hat-nho-hm290.jpg"
+    },
+    {
+      "Id": "D:\\HK 1 NAM 4\\DO_AN_2\\WebBanVTNN\\WebLinhKienDienTu\\wwwroot\\media\\products\\52884940-2444-43e3-8e55-8dff8c41d41d_Bộ PC 07 I5-12400F.jpg",
+      "PackagePath": "staticwebassets\\media\\products\\52884940-2444-43e3-8e55-8dff8c41d41d_Bộ PC 07 I5-12400F.jpg"
+    },
+    {
+      "Id": "D:\\HK 1 NAM 4\\DO_AN_2\\WebBanVTNN\\WebLinhKienDienTu\\wwwroot\\media\\products\\61e6eb83-00fc-4732-9e4b-918174c853bc_dua-leo-lai-f1-9339.jpg",
+      "PackagePath": "staticwebassets\\media\\products\\61e6eb83-00fc-4732-9e4b-918174c853bc_dua-leo-lai-f1-9339.jpg"
+    },
+    {
+      "Id": "D:\\HK 1 NAM 4\\DO_AN_2\\WebBanVTNN\\WebLinhKienDienTu\\wwwroot\\media\\products\\637289ea-9c5c-4880-aa14-c6619aeaba94_7.jpg",
+      "PackagePath": "staticwebassets\\media\\products\\637289ea-9c5c-4880-aa14-c6619aeaba94_7.jpg"
+    },
+    {
+      "Id": "D:\\HK 1 NAM 4\\DO_AN_2\\WebBanVTNN\\WebLinhKienDienTu\\wwwroot\\media\\products\\6fa85076-168f-4a38-be82-d0620c44a31d_Bộ PC 03 Pro Max.jpg",
+      "PackagePath": "staticwebassets\\media\\products\\6fa85076-168f-4a38-be82-d0620c44a31d_Bộ PC 03 Pro Max.jpg"
+    },
+    {
+      "Id": "D:\\HK 1 NAM 4\\DO_AN_2\\WebBanVTNN\\WebLinhKienDienTu\\wwwroot\\media\\products\\74cb50e7-a8a6-4bbb-b394-0f1a9ecc311f_vuanhen.png",
+      "PackagePath": "staticwebassets\\media\\products\\74cb50e7-a8a6-4bbb-b394-0f1a9ecc311f_vuanhen.png"
+    },
+    {
+      "Id": "D:\\HK 1 NAM 4\\DO_AN_2\\WebBanVTNN\\WebLinhKienDienTu\\wwwroot\\media\\products\\7c9c4e5b-1bec-450e-96db-0bdc78621580_conco.png",
+      "PackagePath": "staticwebassets\\media\\products\\7c9c4e5b-1bec-450e-96db-0bdc78621580_conco.png"
+    },
+    {
+      "Id": "D:\\HK 1 NAM 4\\DO_AN_2\\WebBanVTNN\\WebLinhKienDienTu\\wwwroot\\media\\products\\7ef410d9-bfab-4e91-915c-a344447b0cab_bocap.jpg",
+      "PackagePath": "staticwebassets\\media\\products\\7ef410d9-bfab-4e91-915c-a344447b0cab_bocap.jpg"
+    },
+    {
+      "Id": "D:\\HK 1 NAM 4\\DO_AN_2\\WebBanVTNN\\WebLinhKienDienTu\\wwwroot\\media\\products\\98690cdc-0ce7-4443-b7bd-13fde7455108_npk.png",
+      "PackagePath": "staticwebassets\\media\\products\\98690cdc-0ce7-4443-b7bd-13fde7455108_npk.png"
+    },
+    {
+      "Id": "D:\\HK 1 NAM 4\\DO_AN_2\\WebBanVTNN\\WebLinhKienDienTu\\wwwroot\\media\\products\\99bf2642-3fb0-43b4-8300-28a0c9a3fbc4_nomine-.jpg",
+      "PackagePath": "staticwebassets\\media\\products\\99bf2642-3fb0-43b4-8300-28a0c9a3fbc4_nomine-.jpg"
+    },
+    {
+      "Id": "D:\\HK 1 NAM 4\\DO_AN_2\\WebBanVTNN\\WebLinhKienDienTu\\wwwroot\\media\\products\\bf5fc125-6fe9-4299-84f1-7b2dda408b6b_Bộ PC 06 - Case Chim Ưng.jpg",
+      "PackagePath": "staticwebassets\\media\\products\\bf5fc125-6fe9-4299-84f1-7b2dda408b6b_Bộ PC 06 - Case Chim Ưng.jpg"
+    },
+    {
+      "Id": "D:\\HK 1 NAM 4\\DO_AN_2\\WebBanVTNN\\WebLinhKienDienTu\\wwwroot\\media\\products\\c4de8769-3238-42ff-b4ca-08a6b180e372_tasieu.jpg",
+      "PackagePath": "staticwebassets\\media\\products\\c4de8769-3238-42ff-b4ca-08a6b180e372_tasieu.jpg"
+    },
+    {
+      "Id": "D:\\HK 1 NAM 4\\DO_AN_2\\WebBanVTNN\\WebLinhKienDienTu\\wwwroot\\media\\products\\c6184916-c95f-4c10-a3e4-9d7d9eab9fcd_dong-ho-do-nhiet-do-va-do-am-3-chuc-nang-kt-908.jpg",
+      "PackagePath": "staticwebassets\\media\\products\\c6184916-c95f-4c10-a3e4-9d7d9eab9fcd_dong-ho-do-nhiet-do-va-do-am-3-chuc-nang-kt-908.jpg"
+    },
+    {
+      "Id": "D:\\HK 1 NAM 4\\DO_AN_2\\WebBanVTNN\\WebLinhKienDienTu\\wwwroot\\media\\products\\d09a61bf-67e1-4fad-8fba-1c31c886417d_dcnn__bo_3_may_do_nong_do_n_p_k.jpg",
+      "PackagePath": "staticwebassets\\media\\products\\d09a61bf-67e1-4fad-8fba-1c31c886417d_dcnn__bo_3_may_do_nong_do_n_p_k.jpg"
+    },
+    {
+      "Id": "D:\\HK 1 NAM 4\\DO_AN_2\\WebBanVTNN\\WebLinhKienDienTu\\wwwroot\\media\\products\\d6aaa53c-ea20-4884-b396-0ea747620315_rau-thom-sa-e-trang-rado-189.jpg",
+      "PackagePath": "staticwebassets\\media\\products\\d6aaa53c-ea20-4884-b396-0ea747620315_rau-thom-sa-e-trang-rado-189.jpg"
+    },
+    {
+      "Id": "D:\\HK 1 NAM 4\\DO_AN_2\\WebBanVTNN\\WebLinhKienDienTu\\wwwroot\\media\\products\\e2e4c983-2773-4e7d-9b49-edff8d705c41_bo-tuoi-lan-bom-doi-t110.jpg",
+      "PackagePath": "staticwebassets\\media\\products\\e2e4c983-2773-4e7d-9b49-edff8d705c41_bo-tuoi-lan-bom-doi-t110.jpg"
+    },
+    {
+      "Id": "D:\\HK 1 NAM 4\\DO_AN_2\\WebBanVTNN\\WebLinhKienDienTu\\wwwroot\\media\\products\\e9738d17-88ba-4485-8757-0aee7bfb68a1_becano-.jpg",
+      "PackagePath": "staticwebassets\\media\\products\\e9738d17-88ba-4485-8757-0aee7bfb68a1_becano-.jpg"
+    },
+    {
+      "Id": "D:\\HK 1 NAM 4\\DO_AN_2\\WebBanVTNN\\WebLinhKienDienTu\\wwwroot\\media\\products\\ebe925b6-0a1b-4ce2-92af-b6786e5fddf0_bo-phun-suong-10-bec-dong-t101.jpg",
+      "PackagePath": "staticwebassets\\media\\products\\ebe925b6-0a1b-4ce2-92af-b6786e5fddf0_bo-phun-suong-10-bec-dong-t101.jpg"
+    },
+    {
+      "Id": "D:\\HK 1 NAM 4\\DO_AN_2\\WebBanVTNN\\WebLinhKienDienTu\\wwwroot\\media\\products\\f0c595a3-c8e9-44b3-856c-6816815cf4df_keo-cat-canh-tren-cao-hai-qua-4m-hm152-kep-thep.jpg",
+      "PackagePath": "staticwebassets\\media\\products\\f0c595a3-c8e9-44b3-856c-6816815cf4df_keo-cat-canh-tren-cao-hai-qua-4m-hm152-kep-thep.jpg"
+    },
+    {
+      "Id": "D:\\HK 1 NAM 4\\DO_AN_2\\WebBanVTNN\\WebLinhKienDienTu\\wwwroot\\media\\products\\f1c7faaf-1616-4f08-8d90-9481363dbd4a_ca-chua-cherry-do-lai-f1-rd-640.jpg",
+      "PackagePath": "staticwebassets\\media\\products\\f1c7faaf-1616-4f08-8d90-9481363dbd4a_ca-chua-cherry-do-lai-f1-rd-640.jpg"
+    },
+    {
+      "Id": "D:\\HK 1 NAM 4\\DO_AN_2\\WebBanVTNN\\WebLinhKienDienTu\\wwwroot\\media\\products\\f58b7c06-9a8e-446e-bb95-bd3f58f6bea8_casechimung.jpg",
+      "PackagePath": "staticwebassets\\media\\products\\f58b7c06-9a8e-446e-bb95-bd3f58f6bea8_casechimung.jpg"
+    },
+    {
+      "Id": "D:\\HK 1 NAM 4\\DO_AN_2\\WebBanVTNN\\WebLinhKienDienTu\\wwwroot\\media\\products\\f8b87a14-3c0d-437e-a985-f1429f5adc94_xa-lach-357.jpg",
+      "PackagePath": "staticwebassets\\media\\products\\f8b87a14-3c0d-437e-a985-f1429f5adc94_xa-lach-357.jpg"
+    },
+    {
+      "Id": "D:\\HK 1 NAM 4\\DO_AN_2\\WebBanVTNN\\WebLinhKienDienTu\\wwwroot\\media\\products\\fa3ad8ee-1766-4970-80ea-b96109eb78b8_3254781831_662088451.jpg",
+      "PackagePath": "staticwebassets\\media\\products\\fa3ad8ee-1766-4970-80ea-b96109eb78b8_3254781831_662088451.jpg"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.DoAn2_VTNN.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.DoAn2_VTNN.props",
+      "PackagePath": "build\\DoAn2_VTNN.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.DoAn2_VTNN.props",
+      "PackagePath": "buildMultiTargeting\\DoAn2_VTNN.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.DoAn2_VTNN.props",
+      "PackagePath": "buildTransitive\\DoAn2_VTNN.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

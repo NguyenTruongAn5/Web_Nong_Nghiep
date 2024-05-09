@@ -1,0 +1,156 @@
+﻿@model IEnumerable<OrderDetails>
+@{
+    decimal total = 0;
+    ViewData["title"] = "PrintReview";
+}
+
+<div class="header">
+    <img class="logo" src="~/images/logo_vtnn.jpg" alt="Logo">
+    <h1 class="title">Hóa đơn</h1>
+</div>
+
+<div class="info-customer">
+    <div class="info-customer-left">
+        <h3>Hóa đơn của hách hàng</h3>
+        <p>Cửa hàng vật tư nông nghiệp An Nguyễn</p>
+        <p>Địa chỉ: 123 Đường ABC, Quận 1, TP.HCM</p>
+    </div>
+</div>
+<div class="table">
+    <table>
+        <thead>
+            <tr>
+                <th scope="col">ID</th>
+                <th scope="col">Order Code</th>
+                <th scope="col">Name Product</th>
+                <th scope="col">Price</th>
+                <th scope="col">Quantity</th>
+                <th scope="col">Total</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                var itemTotal = (decimal)item.Price * (decimal)item.Quantity;
+                total += itemTotal;
+                <tr>
+                    <th scope="row">@item.ProductId</th>
+                    <td>@item.OrderCode</td>
+                    <td>@item.Product</td>
+                    <td>@item.Price</td>
+                    <td>@item.Quantity</td>
+                    <td>@itemTotal</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+<div class="total">
+    <div class="total-left">
+        <h3>Tổng cộng</h3>
+        <p>@total.ToString("C")</p>
+    </div>
+</div>
+
+<div class="footer">
+    <p>Cảm ơn quý khách!</p>
+</div>
+<a class="btn btn-primary" asp-action="ExportPDF" asp-controller="ManagerAccount" >Print</a>
+<a asp-action="Index" asp-controller="ManagerAccount">Back To Account Setting</a>
+<style>
+    * {
+        box-sizing: border-box;
+        font-family: 'Arial', sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        background: linear-gradient(180deg, #f0f0f0, #e0e0e0);
+        font-size: 16px;
+    }
+
+    .header {
+        background: linear-gradient(90deg, #4CAF50, #45a049);
+        color: #fff;
+        padding: 20px 0;
+        text-align: center;
+    }
+
+    .logo {
+        width: 150px;
+        height: 50px;
+        margin: 0 auto;
+    }
+
+    .title {
+        font-size: 24px;
+        margin: 20px 0;
+        color: #333;
+    }
+
+    .info-customer,
+    .table,
+    .total,
+    .footer {
+        width: 80%;
+        margin: 20px auto;
+        background: linear-gradient(180deg, #fff, #f5f5f5);
+        border: 1px solid #ddd;
+        padding: 15px;
+        border-radius: 8px;
+    }
+
+        .info-customer-left,
+        .info-customer-right,
+        .table table,
+        .total-left,
+        .total-right {
+            width: 48%;
+            float: left;
+        }
+
+        .info-customer h3,
+        .total h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .info-customer p,
+        .total p {
+            font-size: 14px;
+            margin-bottom: 5px;
+            color: #666;
+        }
+
+        .table table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        .table th,
+        .table td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+
+        .table th {
+            background: linear-gradient(180deg, #f2f2f2, #e0e0e0);
+        }
+
+        .footer p {
+            font-size: 20px;
+            margin-bottom: 10px;
+            color: #000;
+        }
+
+        .footer a {
+            text-decoration: none;
+            color: #4CAF50;
+            font-weight: bold;
+        }
+</style>

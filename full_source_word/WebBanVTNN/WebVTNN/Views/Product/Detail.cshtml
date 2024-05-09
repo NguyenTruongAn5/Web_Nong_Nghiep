@@ -1,0 +1,225 @@
+﻿@model WebLinhKienDienTu.Models.ProductDetailViewModel
+@{
+    var listProCat = ViewBag.productCat as List<ProductModel>;
+}
+<div class="row">
+    <div class="col-sm-3">
+        @Html.Partial("_SidebarPartical")
+    </div>
+
+    <div class="col-sm-9 padding-right">
+        <div class="product-details">
+            <!--product-details-->
+            <div class="col-sm-5">
+                <div class="view-product">
+                    <img src="~/media/products/@Model.Product.Image" alt="@Model.Product.Name" />
+                    <h3>@Model.Product.Name</h3>
+                </div>
+                <div id="similar-product" class="carousel slide" data-ride="carousel">
+
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <a href=""><img src="images/product-details/similar1.jpg" alt=""></a>
+                            <a href=""><img src="images/product-details/similar2.jpg" alt=""></a>
+                            <a href=""><img src="images/product-details/similar3.jpg" alt=""></a>
+                        </div>
+                        <div class="item">
+                            <a href=""><img src="images/product-details/similar1.jpg" alt=""></a>
+                            <a href=""><img src="images/product-details/similar2.jpg" alt=""></a>
+                            <a href=""><img src="images/product-details/similar3.jpg" alt=""></a>
+                        </div>
+                        <div class="item">
+                            <a href=""><img src="images/product-details/similar1.jpg" alt=""></a>
+                            <a href=""><img src="images/product-details/similar2.jpg" alt=""></a>
+                            <a href=""><img src="images/product-details/similar3.jpg" alt=""></a>
+                        </div>
+                    </div>
+
+                    <!-- Controls -->
+                    <a class="left item-control" href="#similar-product" data-slide="prev">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                    <a class="right item-control" href="#similar-product" data-slide="next">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-7">
+                <div class="product-information">
+                    <!--/product-information-->
+                    <img src="#" class="newarrival" alt="" />
+                    <h2>@Model.Product.Name</h2>
+                    <img src="images/product-details/rating.png" alt="" />
+                    <span>
+                        <span>$@Model.Product.Price</span>
+                        <form asp-route-id="@Model.Product.Id" asp-action="Add" asp-controller="Cart" method="post">
+                            <button type="submit" class="btn btn-fefault cart">
+                                <i class="fa fa-shopping-cart"></i>
+                                Add to cart
+                            </button>
+                        </form>
+                    </span>
+                    <p><b>Thương hiệu:</b> @Model.Product.Brand.Name</p>
+                    <p><b>Danh mục:</b> @Model.Product.Category.Name</p>
+                    <p><b>Mô tả:</b><div>@Html.Raw(Model.Product.Description)</div></p>
+                    <a href=""><img src="#" class="share img-responsive" alt="" /></a>
+                </div><!--/product-information-->
+            </div>
+        </div><!--/product-details-->
+
+        <div class="category-tab shop-details-tab">
+            <!--category-tab-->
+            <div class="col-sm-12">
+                <ul class="nav nav-tabs">
+                    <li>
+                        <a data-toggle="tab">
+                            Reviews(<span>@ViewBag.CommentCount</span>)
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="row">
+                <div class="col-md-9">
+                    <div id="commentPartial">
+                        @foreach (var item in Model.Comments)
+                        {
+                            <div class="comment">
+                                <div class="user-info">
+                                    <img src="~/images/logo.jpg" width="10%" alt="User Avatar" class="user-avatar">
+                                    <div class="user-details">
+                                        <p><strong>@item.UserID</strong></p>
+                                        <p class="comment-date">@item.CreateDate.ToString("MMMM dd, yyyy")</p>
+                                    </div>
+                                </div>
+                                <p class="comment-content">
+                                    @item.Comments
+                                </p>
+                            </div>
+                        }
+                        @if (User.Identity?.IsAuthenticated ?? false)
+                        {
+                            <div class="tab-pane fade active in" id="reviews">
+                                <div class="col-sm-12">
+                                    <form asp-route-id="@Model.Product.Id" asp-action="CreateComment" asp-controller="Product">
+                                        <div class="form-group">
+                                            <label>Message Comment</label>
+                                            <textarea asp-for="Comments" class="form-control" name="Comments"></textarea>
+                                        </div>
+                                        <div class="form-group">
+                                            <button class="btn btn-primary btn-sm">Submit</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        }
+                        else
+                        {
+                            <h3>Đăng nhập để comment!!</h3>
+                            <a class="btn btn-default" asp-controller="Account" asp-action="Login">
+                                Login
+                            </a>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div><!--/category-tab-->
+
+        <div class="recommended_items">
+            <!--recommended_items-->
+            <h2 class="title text-center">recommended items</h2>
+            <div id="recommended-item-carousel" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    @foreach (var item in listProCat)
+                    {
+                        <div class="item active">
+                            <div class="col-sm-4">
+                                <div class="product-image-wrapper">
+                                    <div class="single-products">
+                                        <div class="productinfo text-center">
+                                            <img src="~/media/products/@item.Image" alt="@item.Name" />
+                                            <h2>@item.Price</h2>
+                                            <p>@item.Name</p>
+                                            <a asp-action="Add" asp-controller="Cart" asp-route-Id="@item.Id"
+                                           class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                    @foreach (var item in listProCat)
+                    {
+                        <div class="item">
+                            <div class="col-sm-4">
+                                <div class="product-image-wrapper">
+                                    <div class="single-products">
+                                        <div class="productinfo text-center">
+                                            <img src="~/media/products/@item.Image" alt="@item.Name" />
+                                            <h2>@item.Price</h2>
+                                            <p>@item.Name</p>
+                                            <a asp-action="Add" asp-controller="Cart" asp-route-Id="@item.Id"
+                                           class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                <a class="left recommended-item-control" href="#recommended-item-carousel" data-slide="prev">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                <a class="right recommended-item-control" href="#recommended-item-carousel" data-slide="next">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+            </div>
+        </div><!--/recommended_items-->
+    </div>
+</div>
+    @section Scripts {
+    <!-- Đường dẫn đến tập tin JavaScript của CKEditor -->
+    <script src="https://cdn.ckeditor.com/4.22.1/standard/ckeditor.js"></script>
+
+    <script>
+        // Khi tài liệu được tải hoàn toàn
+        document.addEventListener("DOMContentLoaded", function () {
+            // Thay thế trường Description bằng CKEditor
+            CKEDITOR.replace('Description');
+        });
+    </script>
+    <style>
+        /* CSS cho bình luận container */
+        .comment {
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        /* CSS cho hình ảnh người dùng */
+        .user-avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        /* CSS cho thông tin người dùng */
+        .user-info {
+            display: flex;
+            align-items: center;
+            margin-bottom: 5px;
+        }
+
+        /* CSS cho ngày bình luận */
+        .comment-date {
+            font-size: 12px;
+            color: #888;
+        }
+
+        /* CSS cho nội dung bình luận */
+        .comment-content {
+            font-size: 14px;
+        }
+    </style>
+}

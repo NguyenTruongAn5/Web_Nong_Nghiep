@@ -1,0 +1,38 @@
+﻿@model X.PagedList.IPagedList<ProductModel>
+@using X.PagedList.Mvc.Core
+@Html.Partial("_SliderPartical")
+<div class="col-sm-3">
+    @Html.Partial("_SidebarPartical")
+</div>
+
+<div class="col-sm-9 padding-right">
+    <div class="features_items">
+        <h2 class="title text-center">Features Items</h2>
+
+        @foreach (var item in Model)
+        {
+            <div class="col-sm-4">
+                <div class="product-image-wrapper">
+                    <div class="single-products">
+                        <div class="productinfo text-center">
+                            <a asp-action="Detail" asp-controller="Product" asp-route-Id="@item.Id">
+                                <img src="~/media/products/@item.Image" alt="" />
+                                <h2>@item.Price</h2>
+                                <p>Tên sản phẩm: @item.Name</p>
+                                <p>Hãng sản xuất: @item.Brand.Name</p>
+                                <p>Danh mục sản phẩm: @item.Category.Name</p>
+                            </a>
+                            <a asp-action="Add" asp-controller="Cart" asp-route-Id="@item.Id"
+                           class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        }
+    </div><!--features_items-->
+</div>
+<div>
+    @Html.PagedListPager(Model, page=>Url.ActionLink("Index", "Home", new {page = page}))
+</div>
